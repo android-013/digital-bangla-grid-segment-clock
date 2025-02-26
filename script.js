@@ -58,8 +58,8 @@ function updateClock() {
     updateDigit("millisecond3", banglaTime[8]);
     updateDigit("millisecond4", banglaTime[9]);
 
-    // Update every 10ms
-    setTimeout(updateClock, 10);
+    // Update every 1s
+    setTimeout(updateClock, 1000);
 }
 
 // Initialize clock on page load
