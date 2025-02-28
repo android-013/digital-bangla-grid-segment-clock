@@ -1,44 +1,56 @@
-/* General styling */
+/* Basic page styling */
 body {
+    margin: 0;
+    padding: 0;
+    background: #222;
+    color: #fff;
+    font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: black;
-}
-
-/* Clock container */
-.clock {
+    min-height: 100vh;
+  }
+  
+  /* Clock container styling */
+  #clock {
     display: flex;
-    gap: 20px;
     align-items: center;
-}
-
-/* Styling for each digit */
-.digit {
+    gap: 20px;
+  }
+  
+  /* Styling for time sections (hours, minutes, seconds, milliseconds) */
+  .time-section {
+    display: flex;
+    gap: 10px;
+  }
+  
+  /* Each digit is a grid with 7 rows and 5 columns */
+  .digit {
     display: grid;
-    grid-template-columns: repeat(5, 20px);
-    grid-template-rows: repeat(7, 20px);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 1fr);
     gap: 2px;
-    background-color: #111;
-    padding: 5px;
-}
-
-/* Individual grid cells */
-.cell {
-    width: 20px;
-    height: 20px;
-    background-color: #222;
-}
-
-/* Cells that light up */
-.lit {
-    background-color: #ffcc00;
-    box-shadow: 0 0 5px #ffcc00, 0 0 10px #ffcc00;
-}
-
-/* Colon styling */
-.colon {
-    font-size: 30px;
-    color: #ffcc00;
-}
+    width: 50px;   /* Adjust width as needed */
+    height: 70px;  /* Adjust height as needed */
+  }
+  
+  /* Each cell styling */
+  .cell {
+    width: 100%;
+    height: 100%;
+    background-color: #555; /* Default unlit color */
+    border: 1px solid #777;
+  }
+  
+  /* Lit cell styling */
+  .cell.active {
+    background-color: #FF4500; /* Change to desired "lit" color */
+  }
+  
+  /* Separator styling (for ":" and ".") */
+  .separator {
+    font-size: 2rem;
+    padding: 0 5px;
+    line-height: 1;
+  }
+  
