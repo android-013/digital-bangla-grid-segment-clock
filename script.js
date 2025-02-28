@@ -51,7 +51,7 @@ const banglaDigitPatterns = {
     const bhours = toBanglaNumber(hours, 2);         // ০৯, ১০, ২৩, etc.
     const bminutes = toBanglaNumber(minutes, 2);     // ০০ to ৫৯
     const bseconds = toBanglaNumber(seconds, 2);     // ০০ to ৫৯
-    const bmilliseconds = toBanglaNumber(milliseconds, 3); // ০০০ to ৯৯৯
+    const bmilliseconds = toBanglaNumber(milliseconds, 2); // ০০ to ৯৯
 
     // Set each digit
     setDigit('hour-tens',   bhours[0]);
@@ -62,7 +62,6 @@ const banglaDigitPatterns = {
     setDigit('second-ones', bseconds[1]);
     setDigit('ms-hundreds', bmilliseconds[0]);
     setDigit('ms-tens',     bmilliseconds[1]);
-    setDigit('ms-ones',     bmilliseconds[2]);
   }
 
   // Run updateClock() periodically (e.g., every 50 ms)
