@@ -21,7 +21,7 @@ body {
   /* Styling for time sections (hours, minutes, seconds, milliseconds) */
   .time-section {
     display: flex;
-    width: 250px;
+    width: 200px;
     gap: 10px;
   }
   
@@ -30,18 +30,20 @@ body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(7, 1fr);
-    gap: 2px;
-    width: 100px;   /* Adjust width as needed */
-    height: 140px;  /* Adjust height as needed */
+    gap: 0; /* Remove grid gap */
+    width: 100px;
+    height: 140px;
   }
   
-  /* Each cell styling */
   .cell {
-    width: 20px;
-    height: 20px;
-    background-color: #555; /* Default unlit color */
-    gap: 0 px;
+    margin: 0;
+    padding: 0;
+    border: none; /* Remove border to avoid extra lines */
+    background-color: #555;
+    width: 100%;
+    height: 100%;
   }
+  
   
   /* Lit cell styling */
   .cell.active {
