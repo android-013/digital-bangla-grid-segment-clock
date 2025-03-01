@@ -11,6 +11,7 @@ body {
     min-height: 100vh;
   }
   
+  
   /* Styling for time sections (hours, minutes, seconds, milliseconds) */
   .time-section {
     display: flex;
