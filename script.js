@@ -64,6 +64,6 @@ const banglaDigitPatterns = {
     setDigit('ms-tens',     bmilliseconds[1]);
   }
 
-  // Run updateClock() periodically (e.g., every 50 ms)
-  setInterval(updateClock, 50);
+  // Run updateClock() periodically (e.g., every hour)
+  setInterval(updateClock, 3600000);
   updateClock(); // Initial call to set correct time immediately
