@@ -68,7 +68,7 @@ body {
   }
   
   /* For smaller screens (max width 600px), stack the sections vertically */
-  @media (max-width: 1000px) {
+  @media (max-width: 1100px) {
     #clock {
       flex-direction: column;
       gap: 10px;
