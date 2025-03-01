@@ -11,13 +11,6 @@ body {
     min-height: 100vh;
   }
   
-  /* Clock container styling */
-  #clock {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
   /* Styling for time sections (hours, minutes, seconds, milliseconds) */
   .time-section {
     display: flex;
