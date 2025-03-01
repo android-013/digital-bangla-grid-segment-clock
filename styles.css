@@ -21,7 +21,8 @@ body {
   /* Styling for time sections (hours, minutes, seconds, milliseconds) */
   .time-section {
     display: flex;
-    width: 200px;
+    width: 250px;
+    height: 170px;
     gap: 10px;
   }
   
@@ -39,7 +40,7 @@ body {
     margin: 0;
     padding: 0;
     border: none; /* Remove border to avoid extra lines */
-    background-color: #555;
+    background-color: #222;
     width: 100%;
     height: 100%;
   }
