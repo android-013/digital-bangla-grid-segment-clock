@@ -47,7 +47,7 @@ body {
   
   /* Lit cell styling */
   .cell.active {
-    background-color: #FF4500; /* Change to desired "lit" color */
+    background-color: greenyellow; /* Change to desired "lit" color */
   }
   
   /* Separator styling (for ":" and ".") */
@@ -67,7 +67,7 @@ body {
   }
   
   /* For smaller screens (max width 600px), stack the sections vertically */
-  @media (max-width: 600px) {
+  @media (max-width: 720px) {
     #clock {
       flex-direction: column;
       gap: 10px;
